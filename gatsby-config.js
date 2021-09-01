@@ -1,7 +1,4 @@
 const data = require('./src/data/data');
-require('dotenv').config({
-  path: `.env.${process.env.NODE_ENV}`,
-});
 module.exports = {
   siteMetadata: {
     title: data.SiteTitle,
@@ -52,14 +49,6 @@ module.exports = {
         theme_color: `#000`,
         display: `minimal-ui`,
         icon: `src/assets/img/ryan-icon.png`, // This path is relative to the root of the site.
-      },
-    },
-    // https://www.gatsbyjs.org/packages/gatsby-plugin-google-analytics/
-    {
-      resolve: `gatsby-plugin-google-analytics`,
-      options: {
-          trackingId: process.env.GATSBY_GOOGLE_ANALYTICS,
-          head: true,
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality
