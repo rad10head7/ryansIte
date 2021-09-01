@@ -3,7 +3,6 @@ import socialMedia from "../../../data/socialMedia.json";
 import data from "./../../../data/data";
 import { FooterStyle, FooterBody, CopyRight, MediaLink, FooterSocialMedia } from './style'
 import {ContainerLayout} from '../../common'
-import { MultiPics } from '../../common/pictures/style';
 
 const Footer = () => {
 	return (
